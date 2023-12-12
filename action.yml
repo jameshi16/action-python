@@ -156,7 +156,6 @@ runs:
         python -m pip install --upgrade pip
         python -m pip install pylint
         cd "${{ inputs.root }}/${{ inputs.workdir }}"
-        python -m pip install .
 
     - if: ${{ inputs.pylint == 'true' }}
       uses: dciborow/action-pylint@0.1.1
